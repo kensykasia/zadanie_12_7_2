@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.board {
+  margin: 0 auto;
+  height: auto;
+}
+
+.column {
+  width: 400px;
+  float: left;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+  margin: 2px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.create-column {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-column:hover {
+  color: lightgrey;
+}
+
+.card {
+  list-style-type: none;
+  font-weight: bold;
+  min-height: 40px;
+  position: relative;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.card-description {
+  font-size: 32px;
+}
+
+.add-card {
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.add-card:hover {
+  cursor: pointer;
+  color: lightgrey;
+}
+
+.btn-delete {
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-delete:hover {
+  color: red;
+}
+
+.card .btn-delete {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-weight: bold;
+}
+
+.column > .btn-delete {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+}
+
+.card-placeholder {
+  border: 2px dashed grey;
+  height: 100px;
+  width: 100%;
+  list-style-type: none;
+}
+
+.ui-sortable {
+  min-height: 80px;
+}
+
+.column-card-list {
+  min-height: 100px;
+  width: 90%;
+  padding: 0;
+  margin: 30px auto;
+}
+
+.btn-delete, .add-card, .card, .create-column, .column{
+  background-color: white;
+  border: 2px dashed black;
+}
