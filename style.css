@@ -71,7 +71,7 @@ h1 {
   color: lightgrey;
 }
 
-.btn-delete {
+.btn-delete, .btn-edit {
   font-family: 'Amatic SC', cursive;
   font-size: 24px;
   cursor: pointer;
@@ -89,11 +89,16 @@ h1 {
   font-weight: bold;
 }
 
+.card .btn-edit {
+  position: absolute;
+  top: 2px;
+  left: 25px;
+}
+
 .column > .btn-delete {
   position: absolute;
   top: 2px;
   left: 2px;
-
 }
 
 .card-placeholder {
@@ -114,7 +119,7 @@ h1 {
   margin: 30px auto;
 }
 
-.btn-delete, .add-card, .card, .create-column, .column{
+.btn-delete, .add-card, .card, .create-column, .column, .btn-edit {
   background-color: white;
   border: 2px dashed black;
 }
